@@ -1,0 +1,93 @@
+package view;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import java.awt.Label;
+import java.awt.BorderLayout;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import javax.swing.JTable;
+
+public class PrimeiraTela {
+
+	private JFrame frame;
+	private JTextField txtBranch;
+	private JTextField txtDateBeggin;
+	private JTextField txtDateEnd;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					PrimeiraTela window = new PrimeiraTela();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public PrimeiraTela() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 584, 267);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JLabel lblNameBranch = new JLabel("Branch");
+		lblNameBranch.setBounds(10, 34, 46, 14);
+		frame.getContentPane().add(lblNameBranch);
+		
+		txtBranch = new JTextField();
+		txtBranch.setBounds(66, 31, 269, 20);
+		frame.getContentPane().add(txtBranch);
+		txtBranch.setColumns(10);
+		
+		Label lblDateBeggin = new Label("Data In\u00EDcio");
+		lblDateBeggin.setBounds(10, 112, 62, 22);
+		frame.getContentPane().add(lblDateBeggin);
+		
+		JLabel lblDateEnd = new JLabel("Data Fim");
+		lblDateEnd.setBounds(10, 159, 46, 14);
+		frame.getContentPane().add(lblDateEnd);
+		
+		JButton btnCheckout = new JButton("Fazer Checkout");
+		btnCheckout.setBounds(408, 30, 126, 23);
+		frame.getContentPane().add(btnCheckout);
+		
+		JButton btnPull = new JButton("Fazer Pull");
+		btnPull.setBounds(408, 95, 89, 23);
+		frame.getContentPane().add(btnPull);
+		
+		JButton btnGenerateReport = new JButton("Gerar Relat\u00F3rio");
+		btnGenerateReport.setBounds(408, 155, 126, 23);
+		frame.getContentPane().add(btnGenerateReport);
+		
+		txtDateBeggin = new JTextField();
+		txtDateBeggin.setToolTipText("dd/mm/YYYY");
+		txtDateBeggin.setBounds(91, 112, 144, 20);
+		frame.getContentPane().add(txtDateBeggin);
+		txtDateBeggin.setColumns(10);
+		
+		txtDateEnd = new JTextField();
+		txtDateEnd.setToolTipText("dd/mm/YYYY");
+		txtDateEnd.setBounds(91, 156, 144, 20);
+		frame.getContentPane().add(txtDateEnd);
+		txtDateEnd.setColumns(10);
+	}
+}

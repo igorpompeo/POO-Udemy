@@ -1,0 +1,30 @@
+package exercicioDolar;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import util.CurrencyConverter;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double IOF = 0.06;
+		
+		double res;
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("What is the dollar price? ");
+		double dolar = sc.nextDouble();
+		System.out.println("How many dollars will be bought? ");
+		double buyDolar = sc.nextDouble();
+		
+		//System.out.println("Amount to be paid in reais = " + CurrencyConverter.amountCost(dolar, buyDolar));
+		res = (dolar * buyDolar) * IOF;
+		System.out.println(res);
+		sc.close();
+	}
+
+}

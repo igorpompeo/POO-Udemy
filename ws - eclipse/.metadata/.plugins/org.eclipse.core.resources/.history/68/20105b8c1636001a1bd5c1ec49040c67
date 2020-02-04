@@ -1,0 +1,26 @@
+
+public class exemplo_formatar_string {
+
+	public static void main(String[] args) {
+
+		/*
+		 * Formatar: Minusculo - toLowerCase(), maiusculo - toUpperCase(), remover espaço - trim()
+		 * Recortar: substring(inicio), substring(inicio, fim)
+		 * Substituir caracter/string: Replace(char, char), Replace(string, string)
+		 * Buscar: IndexOf, LastIndexOf
+		 * recortar: str.split("")
+		 * */
+		String original = "abcde FGHIJ ABC abc DEFG          ";
+		
+		String s01 = original.toLowerCase();
+		String s02 = original.toUpperCase();
+		
+		System.out.println("--------- String Original ----------");
+		System.out.println(original);
+		System.out.println("--------- String Modificada S01 ---------");
+		System.out.println(s01);
+		System.out.println("--------- String Modificada S02 ---------");
+		System.out.println(s02);
+	}
+
+}
