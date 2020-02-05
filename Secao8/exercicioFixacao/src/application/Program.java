@@ -7,9 +7,7 @@ import entidades.Rectangle;
 
 public class Program {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+	public static void main(String[] args) {		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
@@ -21,6 +19,8 @@ public class Program {
 		System.out.println("AREA: " + rectangle.area());
 		System.out.println("PERIMETER: " + rectangle.perimeter());
 		System.out.println("DIAGONAL: " + rectangle.diagonal());
+
+		sc.close();
 	}
 
 }
