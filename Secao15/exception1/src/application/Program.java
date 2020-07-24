@@ -1,15 +1,17 @@
-package app;
+package application;
 
-import java.sql.Date;
+import java.util.Date;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
 
 import model.entities.Reservation;
 
-public class Program1 {
-    public static void main(final String[] args) throws ParseException {
-        
-        Scanner sc = new Scanner(System.in);
+public class Program {
+
+	public static void main(String[] args) throws ParseException {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         
         System.out.print("Room number: ");
@@ -47,5 +49,6 @@ public class Program1 {
         }
 
         sc.close();
-    }
+	}
+
 }
