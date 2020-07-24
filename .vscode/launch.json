@@ -6,6 +6,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Program1",
+            "request": "launch",
+            "mainClass": "app.Program1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Program",
+            "request": "launch",
+            "mainClass": "app.Program"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
